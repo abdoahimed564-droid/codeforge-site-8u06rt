@@ -1,7 +1,3 @@
-<style>body{font-family:system-ui;text-align:center;padding:40px;background:linear-gradient(135deg,#7c5cff,#22d3ee);color:#fff}
-button{padding:10px 20px;border:0;border-radius:10px;font-size:16px;cursor:pointer}</style><h1>Hello CodeForge ⚡</h1>
-<button id="b">Click me</button>
-<p id="out"></p><script>
-let n=0;
-b.onclick=()=>{ n++; out.textContent="Clicks: "+n; console.log("click",n); };
+<style>body{display:grid;place-items:center;min-height:90vh;background:#0f172a;font-family:system-ui}#c{width:260px;background:#1e293b;padding:14px;border-radius:20px}#d{width:100%;font-size:28px;text-align:right;padding:10px;border:0;border-radius:10px;margin-bottom:10px}#k{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}button{padding:14px;border:0;border-radius:12px;font-size:18px;background:#334155;color:#fff;cursor:pointer}button:active{transform:scale(.92)}</style><div id="c"><input id="d" readonly value="0"><div id="k"></div></div><script>
+"C789/456*123-0.=+".split("").forEach(x=>{const b=document.createElement("button");b.textContent=x;b.onclick=()=>{if(x==="C")d.value="0";else if(x==="="){try{d.value=Function("return "+d.value)()}catch{d.value="Error"}}else d.value=(d.value==="0"?"":d.value)+x};k.append(b)});
 </script>
